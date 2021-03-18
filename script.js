@@ -17,9 +17,17 @@ var saveEl = $('#save');
 // Time boxes
 // https://stackoverflow.com/questions/62925657/can-anyone-help-me-colorcode-my-time-blocks-using-jquery
 
+// Save Glyph from font awesome or another API - google?...
 
 
 
+// function diaryEntry (event) {
+//   event.preventDefault();
+  
+//   var diaryItem = 
+
+
+// }
 
 // handle displaying the time - MOMENT
 function displayTime() {

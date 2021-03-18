@@ -80,7 +80,7 @@ textarea {
   background-color: white;
   text-align: right;
   border-left: none;
-  border-style: outset;
+  border-style:outset;
   margin-top: 1px;
   line-height: 2.5;
 }
@@ -90,8 +90,7 @@ textarea {
   border-color: lavender;
   text-align: left;
   margin-top: 1px;
-  padding-right: 1px;
-  border-style: outset;
+  border-style:outset;
   line-height: 1.5;
 }
 
@@ -100,5 +99,5 @@ textarea {
   border-bottom-right-radius: 25px;
   border-top-right-radius: 25px;
   margin-top: 1px;
-  border-style:groove;
+  border-style:ridge;
 }
