@@ -2,14 +2,14 @@
 var timeDisplayEl = $('#time-display');
 var workHourEl = $('#working-hour');
 var diaryEl = $('#diary-input');
-// var saveEl = $('#save');
+
 
 
 
 $('.saveBtn').on('click', function () {
-  console.log("Working")
   var entry = $(this).siblings(".form-input").val();
   var time = $(this).parent().attr('id');
+  $(this).css('color', '#00FF00');
   console.log(entry, time)
   localStorage.setItem(time, entry);
 })
@@ -42,25 +42,9 @@ function displayTime() {
 
 
 // SAVE DIARY ENTRY TO LOCAL STORAGE
-// function diaryEntry (event) {
-//   event.preventDefault();  
 
-//   var diaryItem = $('input[name="diary-input"]').val();
-
-//   function savelocal () {
-//   var datasave = saveDateEl.value.trim();  
-//   localStorage.setItem("savelocal"),JSON.stringify(savelocal);
-
-// }
-// }
-
-// Displays Time
 setInterval(displayTime, 1000);
-// displayTime();
-// Saves 
-// saveEl.on("click", function() {
-//   savelocal();  
-// })
+
 
 $("#9 .form-input").val(localStorage.getItem("9"))
 $("#10 .form-input").val(localStorage.getItem("10"))
@@ -74,9 +58,11 @@ $("#17 .form-input").val(localStorage.getItem("17"))
 $("#18 .form-input").val(localStorage.getItem("18"))
 
 
-// ASK ABOUT LOCAL STORAGE + 
+// TO DO
 
-
+// Add Save Glyph 
+// Readme
+// Colour Code middle column, not left hand column
 
 /*
 PSEUDOCODE

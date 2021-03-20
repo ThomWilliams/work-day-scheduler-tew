@@ -4,13 +4,14 @@ body {
   line-height: 1;
 }
 
-textarea {
+input {
   background: transparent;
   border: none;
   resize: none;
   color: #000000;
   border-left: 1px solid black;
   padding: 10px;
+  border-style: inset;
 }
 
 .jumbotron {
@@ -40,6 +41,8 @@ textarea {
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
+  font-size: 20px;
+  padding-top: 27px;
 }
 
 .past {
@@ -63,41 +66,15 @@ textarea {
   border-bottom-right-radius: 15px;
   background-color: #06aed5;
   color: white;
+  font-size: 25px;
+  
 }
 
 .saveBtn i:hover {
-  font-size: 20px;
   transition: all 0.3s ease-in-out;
 }
 
-
-
-/* CSS styling added to blocks */
-
-
-
-/* #working-hour {
-  background-color: white;
-  text-align: right;
-  border-left: none;
-  border-style:outset;
-  margin-top: 1px;
-  line-height: 2.5;
-}
-
-#diary-input {
-  background-color: lightgray;
-  border-color: lavender;
-  text-align: left;
-  margin-top: 1px;
-  border-style:outset;
-  line-height: 1.5;
-}
-
-#save {
-  background-color: #06aed5;
-  border-bottom-right-radius: 25px;
-  border-top-right-radius: 25px;
-  margin-top: 1px;
-  border-style:ridge;
+/* 
+#working-hour {
+ 
 } */
