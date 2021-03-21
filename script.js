@@ -1,28 +1,19 @@
-// save reference to important DOM elements
+// REFERENCES TO KEY DOM ELEMENTS
 var timeDisplayEl = $('#time-display');
 var workHourEl = $('#working-hour');
 var diaryEl = $('#diary-input');
 
 
+// TIME FUNCTIONALITY FEATURES - USING MOMENT
 
-
-$('.saveBtn').on('click', function () {
-  var entry = $(this).siblings(".form-input").val();
-  var time = $(this).parent().attr('id');
-  $(this).css('color', '#00FF00');
-  console.log(entry, time)
-  localStorage.setItem(time, entry);
-})
-
-// MOMENT to handle displaying the time 
+// Time Display
 function displayTime() {
-  console.log("Working time")
+
   var rightNow = moment().format('MMM DD, YYYY [at] hh:mm:ss a');
   timeDisplayEl.text(rightNow);
 
 
-  // COlOUR ELEMENTS ACCORDING TO HOUR OF DAY
-
+  // Diary Elements Colour-coded accoridng to time of day
   $(".time-block").each(function () {
     var entryHourString = $(this).attr('id');
     var entryHourNum = parseInt(entryHourString);
@@ -41,11 +32,16 @@ function displayTime() {
 };
 
 
-// SAVE DIARY ENTRY TO LOCAL STORAGE
+// SAVE BUTTON FUNCTION
+$('.saveBtn').on('click', function () {
+  var entry = $(this).siblings(".form-input").val();
+  var time = $(this).parent().attr('id');
+  $(this).css('color', '#00FF00');
+  console.log(entry, time)
+  localStorage.setItem(time, entry);
+})
 
-setInterval(displayTime, 1000);
-
-
+// Saves text to local storage for each dairy entry
 $("#9 .form-input").val(localStorage.getItem("9"))
 $("#10 .form-input").val(localStorage.getItem("10"))
 $("#11 .form-input").val(localStorage.getItem("11"))
@@ -57,35 +53,5 @@ $("#16 .form-input").val(localStorage.getItem("16"))
 $("#17 .form-input").val(localStorage.getItem("17"))
 $("#18 .form-input").val(localStorage.getItem("18"))
 
-
-// TO DO
-
-// Add Save Glyph 
-// Readme
-// Colour Code middle column, not left hand column
-
-/*
-PSEUDOCODE
-insert timer
-create 3 column layout using bootstrap
-  -  define time ranges for workHourEl - create array of times and loop through?
-  -  create user text input for diaryEl
-  -  create saveEl Button
-Define colour coding by past, present and future classes on the rows..... if (timeDisplay = rightnow)
-Local storage / JSON function to save data after a refresh
-d
-
-
-
-
-NOTES....
-
-// function colour change for past, present, future
-// Time boxes
-// https://stackoverflow.com/questions/62925657/can-anyone-help-me-colorcode-my-time-blocks-using-jquery
-
-// Save Glyph from font awesome or another API - google?...
-
-BOOT STRAP - lists - https://getbootstrap.com/docs/4.5/components/list-group/
-
-*/
+// Time Interval runs every second
+setInterval(displayTime, 1000);

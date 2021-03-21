@@ -4,16 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Bootstrap API - enhancing 3 column layout, formatting and stylings-->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
-    
+    <!-- Fontawesome API - enhancing font styles and save glyphicon -->
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.10.2/css/all.css"
       
     />
+    <!-- Google Fonts API - enhancing font styling-->
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
@@ -30,65 +33,86 @@
       <p id="currentDay" class="lead"></p>
 
     </header>
-      <!-- Timeblocks go here -->
+      <!-- Timeblock Container-->
       <div class="container">
-        
+
+        <!-- 9AM Time Block -->
         <div class="row time-block" id="9">
-          <div class="hour col-sm-2" id="working-hour" time="09">9AM</div>
+          <div class="hour col-sm-2" id="working-hour">9AM</div>
           <textarea id="diary-input" type="text" class="col-sm-8 form-input w-100" name="diary-input" placeholder="Enter text and plan your day..."></textarea>
           <button class="col-sm-2 btn btn-info saveBtn fa fa-save" id="save"></button>
         </div>       
+
+        <!-- 10AM Time Block -->
         <div class="row time-block" id="10">
-          <div class="hour col-sm-2" id="working-hour" time="10">10AM</div>
+          <div class="hour col-sm-2" id="working-hour">10AM</div>
           <textarea id="hour diary-input" type="text" class="col-sm-8 form-input w-100" name="diary-input" placeholder="Enter text and plan your day..."></textarea>
           <button class="col-sm-2 btn btn-info saveBtn fa fa-save" id="save"></button>
         </div>
+
+        <!-- 11AM Time Block -->
         <div class="row time-block" id="11">
-          <div class="hour col-sm-2" id="working-hour" time="11">11AM</div>
+          <div class="hour col-sm-2" id="working-hour">11AM</div>
           <textarea id="diary-input" type="text" class="col-sm-8 form-input w-100" name="diary-input" placeholder="Enter text and plan your day..."></textarea>
           <button class="col-sm-2 btn btn-info saveBtn fa fa-save" id="save"></button>
         </div>
+
+        <!-- 12PM Time Block -->
         <div class="row time-block" id="12">
-          <div class="hour col-sm-2" id="working-hour" time="12">12PM</div>
+          <div class="hour col-sm-2" id="working-hour">12PM</div>
           <textarea id="diary-input" type="text" class="col-sm-8 form-input w-100" name="diary-input" placeholder="Enter text and plan your day..."></textarea>
           <button class="col-sm-2 btn btn-info saveBtn fa fa-save" id="save"></button>
-        </div>       
+        </div> 
+
+        <!-- 1PM Time Block -->
         <div class="row time-block" id="13">
-          <div class="hour col-sm-2" id="working-hour" time="13">1PM</div>
+          <div class="hour col-sm-2" id="working-hour">1PM</div>
           <textarea id="diary-input" type="text" class="col-sm-8 form-input w-100" name="diary-input" placeholder="Enter text and plan your day..."></textarea>
           <button class="col-sm-2 btn btn-info saveBtn fa fa-save" id="save"></button>
         </div>
+
+        <!-- 2PM Time Block -->
         <div class="row time-block" id="14">
-          <div class="hour col-sm-2" id="working-hour" time="14">2PM</div>
+          <div class="hour col-sm-2" id="working-hour">2PM</div>
           <textarea id="diary-input" type="text" class="col-sm-8 form-input w-100" name="diary-input" placeholder="Enter text and plan your day..."></textarea>
           <button class="col-sm-2 btn btn-info saveBtn fa fa-save" id="save"></button>
         </div>
+
+        <!-- 3PM Time Block -->
         <div class="row time-block" id="15">
-          <div class="hour col-sm-2" id="working-hour" time="15">3PM</div>
+          <div class="hour col-sm-2" id="working-hour">3PM</div>
           <textarea id="diary-input" type="text" class="col-sm-8 form-input w-100" name="diary-input" placeholder="Enter text and plan your day..."></textarea>
           <button class="col-sm-2 btn btn-info saveBtn fa fa-save" id="save"></button>
         </div>
+
+        <!-- 4PM Time Block -->
         <div class="row time-block" id="16">
-          <div class="hour col-sm-2" id="working-hour" time="16">4PM</div>
+          <div class="hour col-sm-2" id="working-hour">4PM</div>
           <textarea id="diary-input" type="text" class="col-sm-8 form-input w-100" name="diary-input" placeholder="Enter text and plan your day..."></textarea>
           <button class="col-sm-2 btn btn-info saveBtn fa fa-save" id="save"></button>
         </div>
+
+        <!-- 5PM Time Block -->
         <div class="row time-block" id="17">
-          <div class="hour col-sm-2" id="working-hour" time="17">5PM</div>
+          <div class="hour col-sm-2" id="working-hour">5PM</div>
           <textarea id="diary-input" type="text" class="col-sm-8 form-input w-100" name="diary-input" placeholder="Enter text and plan your day..."></textarea>
           <button class="col-sm-2 btn btn-info saveBtn fa fa-save" id="save"></button>
         </div>
+
+        <!-- 6PM Time Block -->
         <div class="row time-block" id="18">
-          <div class="hour col-sm-2" id="working-hour"time="18">6PM</div>
+          <div class="hour col-sm-2" id="working-hour">6PM</div>
           <textarea id="diary-input" type="text" class="col-sm-8 form-input w-500" name="diary-input" placeholder="Enter text and plan your day..."></textarea>
           <button class="col-sm-2 btn btn-info saveBtn fa fa-save" id="save"></button>
         </div>
       </div>
     </div>
 
+    <!-- Link to Jquery API -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Link to Moment API -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    
+    <!-- Link to Javascript -->
     <script type="text/javascript" src="script.js"></script>
     
   </body>
